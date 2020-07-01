@@ -42,7 +42,7 @@ app.layout = html.Div([
     ]
 )
 def update_output_div(exams_quantity, model_type):
-    model = Invoker.get_model(model_type)
+    model = Invoker.get_model(exams_quantity, model_type)
     model.train()
     return "Holiii"
 
